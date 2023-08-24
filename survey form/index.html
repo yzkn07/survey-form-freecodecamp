@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Fill up with your ideas and let be better all together.</p>
+    <form id="survey-form">
+      <label for="name" id="name-label">Name: <input type="text" id="name" required placeholder="Enter your name"></label>
+      <label for="email" id="email-label">E-mail: <input type="email" id="email" required placeholder="Enter your email"></label>
+      <label for="number" id="number-label">Number: <input type="number" id="number" required placeholder="Enter your phone number" min="8" max="12"></label>
+      <label for="dropdown">Gender: <select id="dropdown">
+        <option>Male</option>
+        <option>Female</option>
+      </select>
+      </label>
+      <p class="animal">Which one is your pat?</p>
+      <label for="dog" class="animal">dog
+      <input type="radio" id="dog" name="dog-or-cat" value="dog" class="animal"></label>
+      
+      <label id="cat" class="animal">cat<input type="radio" id="cat" name="dog-or-cat" value="cat" class="animal"></label>
+
+<p class="animal">What are their moods?</p>
+      <label class="animal" for="happy" name="mood" >happy<input class="animal" type="checkbox" value="happy" id="happy"></label>
+      <label class="animal" for="active" name="mood">active<input class="animal" type="checkbox" value="active" id="active"></label>
+      <label class="animal" for="playfull" name="mood">playfull<input class="animal" type="checkbox" value="playfull" id="playfull"></label>
+      <textarea rows="5" placeholder="tell us about your ideas..."></textarea>
+      <button type="submit" id="submit">submit</button>
+    </form>
+  </body>
+</html>
